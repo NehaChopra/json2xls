@@ -1,62 +1,3 @@
-# Json2xls
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/json2xls`. To experiment with that code, run `bin/console` for an interactive prompt.
-This gem will expect an file containing JSON in it and convert it into the respective .Xls file as an exporter.
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'json2xls'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install json2xls
-
-## Usage
-
-```
-Json2xls::Generator.new(["../spec/sample.json""])
-```
-
-Json2xls can take single file containing the JSON formatted data and export it to respect .xls.
-A folder of Json2xls will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
-
-```
-Json2xls::Generator.new(["../spec/sample.json","../spec/sample1.json"], {name: "Test", path: "#{ENV['HOME']}/Json2xls/"})
-```
-
-Json2xls can take more than a single file containing the JSON formatted data and export it to respect .xls.
-When more than single files are provided to the Json2xls in order to export the .xls a single workbook with multiple sheet tabs are created.
-A folder of Json2xls will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
-
-Where to find your generated excel export:
-Folder structure: home_directory/Json2xls/time_stamp/cretead_file.xls
-
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/NehaChopra/json2xls. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [nchopra456@gmail.com](https://github.com/NehaChopra/) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Json2xls project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/NehaChopra/json2xls).
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -114,7 +55,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at nchopra456@gmail.com. All
+reported by contacting the project team at nchopra456@gmail.com . All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
